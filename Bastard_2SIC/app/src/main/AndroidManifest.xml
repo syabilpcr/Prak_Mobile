@@ -12,24 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BastardApps">
         <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".pertemuan_4.FourthActivity"
             android:exported="false" />
         <activity
             android:name=".pertemuan_3.ThirdResultAcitivity"
             android:exported="false" />
-
         <activity
             android:name=".pertemuan_2.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+                android:name=".SplashScreenActivity"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
     </application>
 
 </manifest>
