@@ -1,19 +1,16 @@
-package com.example.bastardapps.pertemuan_4
+package com.example.bastardapps.Home.pertemuan_4
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.bastardapps.Home.pertemuan_2.SecondActivity
 import com.example.bastardapps.MainActivity
 import com.example.bastardapps.R
 import com.example.bastardapps.databinding.ActivityFourthBinding
-import com.example.bastardapps.databinding.ActivityMainBinding
-import com.example.bastardapps.pertemuan_2.SecondActivity
-import com.example.bastardapps.pertemuan_3.ThirdResultAcitivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 

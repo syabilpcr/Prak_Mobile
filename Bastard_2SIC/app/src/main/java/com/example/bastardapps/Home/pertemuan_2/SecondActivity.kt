@@ -1,6 +1,5 @@
-package com.example.bastardapps.pertemuan_3
+package com.example.bastardapps.Home.pertemuan_2
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -11,36 +10,29 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.bastardapps.R
-import com.example.bastardapps.databinding.ActivityThirdBinding
 
-class ThirdActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityThirdBinding
-
+class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityThirdBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
+        setContentView(R.layout.activity_second)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //val inputNoTujuan : EditText = findViewById(R.id.inputNoTujuan)
-        //val btnKirim: Button = findViewById(R.id.btnKirim)
 
-        binding.btnKirim.setOnClickListener {
+        // Inisialisasi komponen
+        val inputNama: EditText = findViewById(R.id.inputNama)
+        val btnSubmit: Button = findViewById(R.id.btnSubmit)
+
+        btnSubmit.setOnClickListener {
             //Mengambil value dari inputNama dan menampilkan di Logcat
-            val nama = binding.inputNoTujuan.text
+            val nama = inputNama.text
             Log.e("Klik btnSubmit", "Tombol berhasil di tekan. Isi dari inputNama = $nama")
 
             Toast.makeText(this, "Anda telah melakukan klik pada tombol Submit", Toast.LENGTH_SHORT)
                 .show()
-
-            val intent = Intent(this, ThirdResultAcitivity::class.java)
-            startActivity(intent)
         }
     }
 }

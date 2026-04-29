@@ -1,4 +1,4 @@
-package com.example.bastardapps.pertemuan_7
+package com.example.bastardapps.Home.pertemuan_7
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

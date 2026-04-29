@@ -5,19 +5,16 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.bastardapps.databinding.ActivityMainBinding
-import com.example.bastardapps.databinding.ActivityThirdBinding
-import com.example.bastardapps.pertemuan_2.SecondActivity
-import com.example.bastardapps.pertemuan_3.ThirdResultAcitivity
-import com.example.bastardapps.pertemuan_4.FourthActivity
+import com.example.bastardapps.Home.pertemuan_2.SecondActivity
+import com.example.bastardapps.Home.pertemuan_4.FourthActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import androidx.core.content.edit
-import com.example.bastardapps.pertemuan_3.ThirdActivity
-import com.example.bastardapps.pertemuan_7.SeventhActivity
+import com.example.bastardapps.Home.pertemuan_3.ThirdActivity
+import com.example.bastardapps.Home.pertemuan_7.SeventhActivity
 import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {

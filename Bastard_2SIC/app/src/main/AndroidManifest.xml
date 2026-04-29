@@ -12,25 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BastardApps">
         <activity
-            android:name=".pertemuan_7.SeventhActivity"
+            android:name=".SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.pertemuan_7.SeventhActivity"
             android:exported="false" />
         <activity
             android:name=".AuthActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_4.FourthActivity"
+            android:name=".Home.pertemuan_4.FourthActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_3.ThirdResultAcitivity"
+            android:name=".Home.pertemuan_3.ThirdResultAcitivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_2.SecondActivity"
+            android:name=".Home.pertemuan_2.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".BaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
